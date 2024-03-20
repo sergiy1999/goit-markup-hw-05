@@ -503,6 +503,7 @@ align-items: baseline;
     width: 100%;
     height: 100%;
     background: rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .model{
@@ -515,17 +516,33 @@ align-items: baseline;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding-left: 24px;
-    padding-right: 24px;
+    padding: 72px 24px 24px 24px; 
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     
     
 }
 
 .model-close{
     position: absolute;
+    width: 24px;
+    height: 24px;
     top: 24px;
     right: 24px;
     border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc; 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    padding: 0; 
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.model-close:hover,
+.model-close:focus{
+    background-color: #404bbf;
+    border: none;
 }
 
 .model-text{
@@ -543,9 +560,12 @@ margin-bottom: 16px;
  width: 100%;
  border: 1px solid rgba(46, 47, 66, 0.4);
  border-radius: 4px;
- max-width: 360px;
  min-height: 40px;
  margin-bottom: 18px;
+ background-color: transparent; 
+ padding-left: 38px;
+ outline: transparent;
+ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .model-input:hover,
@@ -553,25 +573,33 @@ margin-bottom: 16px;
     border: 1px solid #4d5ae5;
 }
 
+.modal-label{
+    margin-bottom: 8px; 
+}
+
 .input-label{
     font-size: 12px;
-line-height: 1.16667;
+line-height: 1.17;
 letter-spacing: 0.04em;
 color: #8e8f99;
 display: block;
-/* margin-bottom: 4px; */
+margin-bottom: 4px;
 
 }
 
 .model-icon{
-    width: 12px;
-    height: 12px;
     position: absolute;
     fill: #2e2f42;
     stroke: #8e8f99;
-    left: 19px;
+    left: 16px;
     top: 50%;
     transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.model-icon:hover,
+.model-icon:focus{
+    fill: #4D5AE5;
 }
 
 .model-name{
