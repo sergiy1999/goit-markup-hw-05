@@ -385,16 +385,20 @@
       </footer>
       <div class="backdrope">
          <div class="model">
-            <button type="button" class="model-close">X</button>
+            <button type="button" class="model-close">
+               <svg>
+                  <use href=""></use>
+               </svg>
+            </button>
             <p class="model-text">Leave your contacts and we will call you back</p>
            <form>
-               <label for="user-name" class="input-label">Name</label>
+             <div class="modal-label"><label for="user-name" class="input-label">Name</label></div>
               <div class="model-name">
                 <input type="text"
                 name="user-name" 
                 class="model-input" 
                 id="user-name"/>
-                 <svg class="model-icon">
+                 <svg class="model-icon" width="18" heigh="24">
                    <use href="./images/icon-input.svg#icon-person-black-18dp-1"></use>
                  </svg>
                </div> 
