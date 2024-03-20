@@ -491,3 +491,9 @@ align-items: baseline;
     color: #4d5ae5;
     margin-bottom: 16px; 
 }
+
+.modal{
+    display: flex;
+    align-items: baseline;
+    
+}
