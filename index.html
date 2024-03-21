@@ -377,9 +377,14 @@
          </div>
          <div class="modal">
             <p class="footrer-name-list">Subscribe</p>
-            <form>
-                <input type="text" name="user-email" aria-placeholder="E-mail">
-                <button type="button">Subscribe</button>
+            <form class="form-register">
+               <label for="user-email"></label>
+                <input type="email" name="user-email" placeholder="E-mail" class="user-register">
+                <button type="button" class="register-btn">Subscribe
+                  <svg class="register-icon" width="24" height="24">
+                     <use href="./images/icon-input.svg#icon-Frame-3-1"></use>
+                  </svg>
+               </button>
             </form>
          </div>
       </footer>
@@ -387,7 +392,7 @@
          <div class="model">
             <button type="button" class="model-close">
                <svg>
-                  <use href=""></use>
+                  <use href="./images/icon-input.svg#icon-close-black-18dp-2-1-1"></use>
                </svg>
             </button>
             <p class="model-text">Leave your contacts and we will call you back</p>
