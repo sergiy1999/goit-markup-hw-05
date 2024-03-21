@@ -333,7 +333,7 @@
          </section>
       </main>
       <footer class="footer">
-         <div class="container general">
+         <div class="container-footer general">
             <div class="footer-subname">
                <a href="./index.html" class="logo-part-footer">Web<span class="logo-footer">Studio</span></a>
                <p class="text-footer">
@@ -373,60 +373,69 @@
                      </a>
                   </li>
                </ul>
-            </div>
+            </div>        
+            <div class="modal">
+               <p class="footrer-name-list">Subscribe</p>
+               <form class="form-register">
+                  <label for="user-email"></label>
+                  <input type="email" name="user-email" placeholder="E-mail" class="user-register">
+                  <button type="button" class="register-btn">Subscribe
+                     <svg class="register-icon" width="24" height="24">
+                        <use href="./images/icon-input.svg#icon-Frame-3-1"></use>
+                     </svg>
+                  </button>
+               </form>
+            </div> 
          </div>
-         <div class="modal">
-            <p class="footrer-name-list">Subscribe</p>
-            <form class="form-register">
-               <label for="user-email"></label>
-                <input type="email" name="user-email" placeholder="E-mail" class="user-register">
-                <button type="button" class="register-btn">Subscribe
-                  <svg class="register-icon" width="24" height="24">
-                     <use href="./images/icon-input.svg#icon-Frame-3-1"></use>
-                  </svg>
-               </button>
-            </form>
-         </div>
-      </footer>
+      </footer> 
       <div class="backdrope">
          <div class="model">
             <button type="button" class="model-close">
-               <svg>
+               <svg class="close" width="8" height="8" >
                   <use href="./images/icon-input.svg#icon-close-black-18dp-2-1-1"></use>
                </svg>
             </button>
             <p class="model-text">Leave your contacts and we will call you back</p>
            <form>
-             <div class="modal-label"><label for="user-name" class="input-label">Name</label></div>
               <div class="model-name">
-                <input type="text"
-                name="user-name" 
-                class="model-input" 
-                id="user-name"/>
-                 <svg class="model-icon" width="18" heigh="24">
-                   <use href="./images/icon-input.svg#icon-person-black-18dp-1"></use>
-                 </svg>
+                 <label for="user-name" class="input-label">Name</label>
+                <div class="model-container"><input type="text"
+                     name="user-name" 
+                     class="model-input" 
+                     id="user-name">
+                     <svg class="model-icon" width="18" height="24">
+                        <use href="./images/icon-input.svg#icon-person-black-18dp-1"></use>
+                     </svg>
+                </div>
                </div> 
-               <label for="user-tel"class="input-label">Phone</label>
-               <div>
+               <div class="model-name">
+                  <label for="user-tel" class="input-label">Phone</label>
                   <input type="tel"
                  name="user-tel"
                   class="model-input"
-                  id="user-tel"
-                  />
-                  <svg class="model-icon" width="12" height="12">
-                     <use href="./images/icon-input.svg#icon-person-black-18dp-1"></use>
+                  id="user-tel">                 
+                  <svg class="model-icon" width="18" height="24">
+                     <use href="./images/icon-input.svg#icon-phone-black-18dp-1"></use>
                   </svg>
               </div>
-
-               <label for="user-email" class="input-label">Email</label>
-               <input type="email" 
-                name="user-email"
-                 class="model-input"
-                  id="user-email"
-               />
-               
-               <input type="text" name="user-coment">
+             <div class="model-name">
+                  <label for="user-email" class="input-label">Email</label>
+                  <input type="email" 
+                  name="user-email"
+                  class="model-input"
+                     id="user-email"
+                  > 
+                  <svg class="model-icon" width="18" height="24">
+                     <use href="./images/icon-input.svg#icon-email-black-18dp-1-1"></use>
+                  </svg>
+              </div>
+               <div>
+                  <label for="user-comment" class="comment">Comment</label>
+                  <input type="comment"
+                  name="user-comment"
+                  class="comment-input"
+                  id="user-comment">
+               </div>
            </form>
          </div>
       </div>
