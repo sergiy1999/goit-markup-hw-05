@@ -654,6 +654,10 @@ margin-bottom: 4px;
     position: relative;
 }
 
+.model-name-comment{
+    margin-bottom: 16px;
+}
+
 .comment-input{
     width: 100%;
     height: 120px;
