@@ -585,8 +585,7 @@ align-items: baseline;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close:hover,
-.close:focus{
+.model-close:hover .close{
     fill: #fff;
 }
 
@@ -617,9 +616,12 @@ margin-bottom: 16px;
  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.model-input:hover,
 .model-input:focus{
     border: 1px solid #4d5ae5;
+}
+
+.model-input:focus + .model-icon {
+    fill: #4D5AE5;
 }
 
 .input-label{
@@ -629,23 +631,16 @@ letter-spacing: 0.04em;
 color: #8e8f99;
 display: block;
 margin-bottom: 4px;
-
 }
 
 .model-icon{
     position: absolute;
-    fill:#4D5AE5;
     fill: #2e2f42;
     stroke: #8e8f99;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.model-icon:hover,
-.model-icon:focus{
-    fill: #4D5AE5;
 }
 
 .model-name{
@@ -675,7 +670,7 @@ resize: none;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.Subscribe{
+.subscribe{
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
@@ -697,8 +692,8 @@ margin-left: 24px;
    margin-bottom: 24px; 
 }
 
-.span-icon:checked{
- background-color: #404bbf;
+.checkbox-click:checked + .privacy > .span-icon {
+  background-color: #404bbf;
  border: none;
  fill: #F4F4FD; 
 }
@@ -721,7 +716,6 @@ color: #8e8f99;
     justify-content: center;
     margin-right: 8px;
     fill: transparent;
-    
 }
 
 .police{
