@@ -38,10 +38,11 @@ p{
 }
 
 .container{
-  width: 1158px;
+  /* width: 1158px; */
+  width: 100%;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .text {
@@ -138,24 +139,32 @@ gap: 40px;
 .hero {
     background: #2e2f42;
     margin: 0 auto;
-    padding-top: 188px;
-    padding-bottom: 188px;
-    max-width: 1440px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    /* padding-top: 188px;
+    padding-bottom: 188px; */
+    /* max-width: 1440px; */
+    min-width: 320px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; 
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg); 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-mobile.jpg); 
 }
 
 .hero-name {
     font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    /* font-size: 56px; */
+    /* line-height: 1.07; */
+    line-height: 1.11111;
     letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
     color: #fff;
-    max-width: 496px;
-    margin: 0 auto 48px;
-
+    width: 216px;
+    margin: 0 auto 72px;
+    /* max-width: 496px; */
+    /* margin: 0 auto 48px; */
 }
 
 .hero-order-btn {
@@ -169,13 +178,18 @@ gap: 40px;
     cursor: pointer;
     border-radius: 4px;
     padding: 16px 32px;
-    display: block;   
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;    
+    /* display: block;    */
     margin: auto;
-   text-align: center;
-   border: none;
-   min-width: 169px;
-   height: 56px;
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    /* text-align: center; */
+    border: none;
+    min-width: 169px;
+    height: 56px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .hero-order-btn:hover,
@@ -197,14 +211,20 @@ gap: 40px;
   }
 
 .info{
- padding-top: 120px;
- padding-bottom: 120px;
- 
+    padding-top: 168px;
+    padding-bottom: 168px;
+ /* padding-top: 120px;
+ padding-bottom: 120px; */
 }
 
 .info-list{
-display: flex;
-gap: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+   flex-direction: column;
+    gap: 72px;
+    /* display: flex;
+    gap: 24px; */
 }
 
 .text-list-strenghts {
@@ -213,12 +233,16 @@ gap: 24px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-    max-width: 264px;
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    max-width: 356px;
+    /* flex-basis: calc((100% - 3 * 24px) / 4); */
+}
+
+.item-icon{
+    display: none;
 }
 
 .item{
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -228,13 +252,15 @@ gap: 24px;
     background-color: #f4f4fd;
     border: 1px solid #8e8f99;
     border-radius: 4px;
-    margin-bottom: 8px;
+    margin-bottom: 8px; */
 }
 
 .text-list-name-info {
-    font-weight: 500;
-    font-size: 20px;
+    font-size: 36px;
     line-height: 1.2;
+    text-transform: capitalize;
+    text-align: center;
+    /* font-size: 20px; */
     letter-spacing: 0.02em;
     color: #2e2f42;
     margin-bottom: 8px;
@@ -242,14 +268,18 @@ gap: 24px;
 
 .team {
     background: #f4f4fd;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
 }
 
 .name-list {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-size: 36px;
+    line-height: 1.11111;
+    text-transform: capitalize;
+    /* font-size: 20px;
+    line-height: 1.2; */
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
@@ -258,7 +288,12 @@ gap: 24px;
 
 .team-link{
     display: flex;
-    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    gap: 72px;
+    flex-wrap: wrap;
+    /* display: flex;
+    gap: 24px; */
 }
 
 .team-list {
@@ -323,8 +358,10 @@ gap: 24px;
 }
 
 .portfolio{
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
 }
 
 .portfolio-list{
@@ -523,7 +560,7 @@ overflow: hidden;
     margin-left: 16px;
 }
 
-.backdrope{
+/* .backdrope{
     position: fixed;
     top: 0;
     width: 100%;
@@ -678,9 +715,9 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .comment-input:hover,
 .comment-input:focus{
     border-color: #4D5AE5;
-}
+} */
 
-.checkbox{
+/* .checkbox{
    margin-bottom: 24px; 
 }
 
@@ -738,5 +775,75 @@ margin:auto;
 .send:hover,
 .send:focus{
     background: #404bbf;
+} */
+
+@media screen and (min-width:768px) {
+
+    .hero{
+        padding-top: 112px;
+        padding-bottom: 112px;
+    } 
+
+    .hero-name{
+      max-width: 496px;
+      margin: 0 auto 48px;
+       font-size: 56px;
+      line-height: 1.07;
+    }
+
+    .hero-order-btn{
+       display: block;
+       text-align: center; 
+    }
+
+    .info{
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .info-list{
+        gap: 70px 24px;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    } 
+    .text-list-strenghts{
+        flex-basis: initial;
+        width: 100%;
+        min-width: 325px;
+
+    }
+    .text-list-name-info{
+        text-align: left;
+    }
+
+    .portfolio-list{
+        justify-content: space-between;
+    }
+    .title-list{
+        width: 48%;
+    }
 }
 
+@media screen and (min-width: 1440px) {
+    .container{
+        width: 1128px;
+    } 
+    
+    .hero{
+         padding-top: 188px;
+      padding-bottom: 188px; 
+       max-width: 1440px;
+    }
+
+    .hero-name{
+      max-width: 496px;
+    }
+
+    .info{
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
