@@ -19,6 +19,7 @@ a {
 img{
  display: block;
  width: 100%;
+ height: auto;
 }
 
 h1,
@@ -53,16 +54,16 @@ p{
     color: #434455;
 }
 
-.header-nav{
+/* .header-nav{
 display: flex;
 align-items: center;
-}
-
+} */
+/* 
 .nav-list{
  display: flex;
  align-items: center;
  gap: 40px;
-}
+} */
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -786,6 +787,7 @@ margin:auto;
 
     .hero-name{
       max-width: 496px;
+      width: 100%;
       margin: 0 auto 48px;
        font-size: 56px;
       line-height: 1.07;
@@ -817,6 +819,7 @@ margin:auto;
     }
     .text-list-name-info{
         text-align: left;
+        font-size: 20px;
     }
 
     .portfolio-list{
@@ -827,23 +830,78 @@ margin:auto;
     }
 }
 
-@media screen and (min-width: 1440px) {
-    .container{
-        width: 1128px;
-    } 
+@media screen and (min-width: 1200px) {
     
-    .hero{
-         padding-top: 188px;
-      padding-bottom: 188px; 
-       max-width: 1440px;
+    .container{
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
-    .hero-name{
-      max-width: 496px;
+    .hero{
+       padding-top: 188px;
+      padding-bottom: 188px;
     }
 
     .info{
         padding-top: 120px;
         padding-bottom: 120px;
     }
+
+    .info-list{
+        gap:24px;
+        flex-wrap: nowrap;
+    }
+
+    .text-list-strenghts {
+        max-width: initial;
+        min-width: initial;
+        width: 264px;
+            flex-basis: calc((100% - 3 * 24px) / 4);
+
+    }
+
+    .item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+        width: 264px;
+        height: 112px;
+        background-color: #f4f4fd;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+
+    .item-icon{
+        display: inline;
+    }
+    
+
+    .team{
+       padding-top: 120px;
+       padding-bottom: 120px;  
+    }
+
+    .name-list{
+       font-size: 36px;
+       line-height: 1.2;
+    }
+
+    .team-link{
+        gap: 24px; 
+        flex-wrap: nowrap;
+    }
+
+    .portfolio-list{
+        justify-content: flex-start;
+    }
+
+    .title-list{
+        width: auto;
+     }
+
+    
 }
